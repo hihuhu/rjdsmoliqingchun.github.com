@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的时尚家居</title>
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+<link href="css/animation.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+      <!--古典家居-->
+	  <section class="background">
+	  	<div class="content-wrapper">
+	  	  <p class="content-title">古典家居</p>        
+		</div>
+        <div class="img">
+          <img src="img/home-album-g1.jpg">
+          <img src="img/home-album-g2.jpg">
+          <img src="img/home-album-g3.jpg">
+          <img src="img/home-album-g4.jpg">
+          <img src="img/home-album-g5.jpg">
+          <div class="hidden">
+            <h1>古典式</h1>
+            <a href="display-g.html">关注更多消息</a>
+          </div>
+        </div>
+        <div class="view">
+          <img src="img/bg-4.png" width="50" height="200">
+        </div>
+	  </section>
+      <!--现代家居-->
+	  <section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">现代式家局</p>
+	    </div>
+        <div class="img">
+          <img src="img/home-album-x1.jpg">
+          <img src="img/home-album-x2.jpg">
+          <img src="img/home-album-x3.jpg">
+          <img src="img/home-album-x4.jpg">
+          <img src="img/home-album-x5.jpg">
+          <div class="hidden">
+            <h1>现代式</h1>
+            <a href="display-x.html">关注更多消息</a>
+          </div>
+        </div>
+        <div class="view">
+          <img src="img/bg-4.png" width="50" height="200">
+        </div>
+	  </section>
+      <!--法式家居-->
+	  <section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">法式</p>
+	    </div>
+        <div class="img">
+          <img src="img/home-album-f1.jpg">
+          <img src="img/home-album-f2.jpg">
+          <img src="img/home-album-f3.jpg">
+          <img src="img/home-album-f4.jpg">
+          <img src="img/home-album-f5.jpg">
+          <div class="hidden">
+            <h1>法式</h1>
+            <a href="display-f.html">关注更多消息</a>
+          </div>
+        </div>
+        <div class="view">
+          <img src="img/bg-4.png" width="50" height="200">
+        </div>
+	  </section>
+      <!--英式家居-->
+      <section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">英式</p>
+	    </div>
+        <div class="img">
+          <img src="img/home-album-y1.jpg">
+          <img src="img/home-album-y2.jpg">
+          <img src="img/home-album-y3.jpg">
+          <img src="img/home-album-y4.jpg">
+          <img src="img/home-album-y5.jpg">
+          <div class="hidden">
+            <h1>英式</h1>
+            <a href="display-y.html">关注更多消息</a>
+          </div>
+        </div>
+        <div class="view">
+          <img src="img/bg-4.png" width="50" height="200">
+        </div>
+	  </section>
+      <!--团队风采-->
+      <section class="background">	       
+        <div class="photo">
+          <div class="title"><a>团队风采</a></div>
+          <img class="img1" src="img/photo3.jpg" width="213" height="284" alt="">
+          <img class="img2" src="img/photo2.jpg" width="221" height="240" alt="">
+          <img class="img3" src="img/photo4.jpg" width="180" height="320" alt="">
+          <img class="img4" src="img/photo6.jpg" width="180" height="320" alt="">
+          <img class="img7" src="img/photo1.jpg" width="240" height="320" alt="">
+          <img class="img5" src="img/photo7.jpg" width="180" height="320" alt="">
+          <img class="img6" src="img/photo5.jpg" width="180" height="320" alt="">
+          <img class="img8" src="img/photo8.jpg" width="180" height="320" alt="">
+          <img class="img9" src="img/photo9.jpg" width="162" height="216" alt="">
+          <img class="img10" src="img/photo10.jpg" width="120" height="160" alt="">
+        </div>
+	  </section>
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+	<script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script>
+	var ticking = false;
+	var isFirefox = /Firefox/i.test(navigator.userAgent);
+	var isIe = /MSIE/i.test(navigator.userAgent) || /Trident.*rv\:11\./i.test(navigator.userAgent);
+	var scrollSensitivitySetting = 30;
+	var slideDurationSetting = 800;
+	var currentSlideNumber = 0;
+	var totalSlideNumber = $('.background').length;
+	function parallaxScroll(evt) {
+	    if (isFirefox) {
+	        delta = evt.detail * -120;
+	    } else if (isIe) {
+	        delta = -evt.deltaY;
+	    } else {
+	        delta = evt.wheelDelta;
+	    }
+	    if (ticking != true) {
+	        if (delta <= -scrollSensitivitySetting) {
+	            ticking = true;
+	            if (currentSlideNumber !== totalSlideNumber - 1) {
+	                currentSlideNumber++;
+	                nextItem();
+	            }
+	            slideDurationTimeout(slideDurationSetting);
+	        }
+	        if (delta >= scrollSensitivitySetting) {
+	            ticking = true;
+	            if (currentSlideNumber !== 0) {
+	                currentSlideNumber--;
+	            }
+	            previousItem();
+	            slideDurationTimeout(slideDurationSetting);
+	        }
+	    }
+	}
+	function slideDurationTimeout(slideDuration) {
+	    setTimeout(function () {
+	        ticking = false;
+	    }, slideDuration);
+	}
+	var mousewheelEvent = isFirefox ? 'DOMMouseScroll' : 'wheel';
+	window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
+	function nextItem() {
+	    var $previousSlide = $('.background').eq(currentSlideNumber - 1);
+	    $previousSlide.css('transform', 'translate3d(0,-130vh,0)').find('.content-wrapper').css('transform', 'translateY(40vh)');
+	    currentSlideTransition();
+	}
+	function previousItem() {
+	    var $previousSlide = $('.background').eq(currentSlideNumber + 1);
+	    $previousSlide.css('transform', 'translate3d(0,30vh,0)').find('.content-wrapper').css('transform', 'translateY(30vh)');
+	    currentSlideTransition();
+	}
+	function currentSlideTransition() {
+	    var $currentSlide = $('.background').eq(currentSlideNumber);
+	    $currentSlide.css('transform', 'translate3d(0,-15vh,0)').find('.content-wrapper').css('transform', 'translateY(15vh)');
+	    ;
+	}
+	</script>
+</body>
+</html>

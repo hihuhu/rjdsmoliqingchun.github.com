@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;}
+  .bg{position:fixed;}
+  .home a{text-decoration:none;display:block;margin:auto auto;cursor:default;color:#000;}
+  .navi{width:195px;height:auto;margin-left:-30px;margin-top:50px;position:absolute;z-index:9999;}
+  .navi p{display:block;text-align:center;width:195px;margin:10px auto;
+          font-size:36px;color:#FFF;}
+  .navi ul{width:150px;height:auto;background:rgba(80,100,110,1);margin:0px auto;}
+  .navi ul li{font-family:"微软雅黑";margin:0px auto;background:rgba(221,170,0,1);
+              list-style:none;text-align:center;line-height:40px;cursor:default;}
+  .navi ul li:hover{background:rgba(240,230,140,1);}
+  .scroll{width:100%;height:100%;position:fixed;}
+  .view{width:100%;height:100%;float:left;}
+  /*内容部分*//*概念部分*/
+  .view-bg-g{width:96%;height:auto;margin:0 auto;margin-top:10px;}
+  .view-bg-g img{width:70%;height:300px;margin-left:15%;margin-bottom:10px;}
+  .view-text-g{width:96%;height:auto;margin:0 auto;}
+  .view-text-bg-g{width:70%;height:auto;margin:0 auto;background:#F0E68C;}
+  .view-text-title-g{width:90%;height:auto;margin:0 auto;background:rgba(128,0,0,1);
+                     color:#FFF;margin-bottom:10px;}
+  .view-text-title-g p{display:block;line-height:50px;font-size:24px;}
+  .view-text-text-g{width:90%;height:auto;margin:0 auto;background:rgba(221,170,0,1);}
+  .view-text-text-g p{display:block;font-size:24px;padding-bottom:50px;}
+  /*分类部分*/ 
+  .view-bg-f{width:740px;height:220px;margin-left:200px;margin-top:10px;background:#FFF;}
+  .view-bg-f img{width:350px;height:200px;margin:10px;}
+  .view-text1-f{width:370px;height:auto;margin-left:200px;margin-top:5px;
+                padding-bottom:5px;background:#F0E68C;float:left;}
+  .view-text2-f{width:370px;height:auto;margin-left:570px;margin-top:5px;
+                padding-bottom:5px;background:#F0E68C;}
+  .view-text3-f{width:420px;height:auto;margin-left:940px;margin-top:-565px;
+                padding-bottom:5px;background:#F0E68C;}
+  .view-text1-title-f{width:96%;height:auto;margin:0 auto;background:rgba(128,0,0,1);
+                      color:#FFF;margin-bottom:10px;}
+  .view-text1-text-f{width:96%;height:auto;margin:0 auto;background:rgba(221,170,0,1);font-size:16px;}
+  .view-text1-title-f p{display:block;line-height:40px;font-size:24px;}
+  /*装饰要素部分*/
+  .view-bg-z{width:1120px;height:220px;margin-left:200px;margin-top:10px;background:#FFF;}
+  .view-bg-z img{width:350px;height:200px;margin:10px;}
+  .view-text1-z{float:left;width:370px;height:auto;
+                padding-bottom:5px;background:#F0E68C;margin:2.5px;}
+  /*运用*/
+  .view-text1-z:nth-child(1){margin-left:200px;}
+  .view-bg-y{width:940px;height:220px;margin:10px auto;background:#FFF;}
+  .view-bg-y img{width:450px;height:200px;margin:10px;}
+  .view-text{width:940px;height:auto;background:rgba(240,230,140,1);margin:0 auto;}
+  .view-text-title{width:96%;height:auto;background:rgba(128,0,0,1);margin:0 auto;}
+  .view-text-title p{line-height:40px;font-size:24px;margin-bottom:5px;color:#FFF;}
+  .view-text-text{width:96%;height:auto;margin:0 auto;background:rgba(221,170,0,1);margin-bottom:5px;}

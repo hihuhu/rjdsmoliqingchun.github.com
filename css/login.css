@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;}
+.hand-0{top:80px;
+	  left:450px;
+	  width:150px;
+	  height:100px;
+	  border-radius:25px;
+	  background:#90F;
+	  position:absolute;
+	  text-align:center;
+	  }
+.hand-1{left:605px;
+      top:80px;
+	  width:110px;
+	  height:23px;
+	  position:absolute;
+	  background:#90F;
+	  border-radius:11.5px;}
+.hand-2{left:605px;
+      top:105px;
+	  width:70px;
+	  height:23px;
+	  position:absolute;
+	  background:#90F;
+	  border-radius:11.5px;}
+.hand-3{left:605px;
+      top:130px;
+	  width:60px;
+	  height:23px;
+	  position:absolute;
+	  background:#90F;
+	  border-radius:11.5px;}
+.hand-4{left:605px;
+      top:155px;
+	  width:40px;
+	  height:23px;
+	  position:absolute;
+	  background:#90F;
+	  border-radius:11.5px;}
+.hand-0 a{font-size:24px;cursor:pointer;}
+.index-bg1{position:absolute;
+          width:100%;
+		  height:100%;}
+.index-bg2{position:absolute;
+          width:100%;
+		  height:100%;}
+.index-bg2 a1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:48px;
+	margin-left:0px;
+	text-shadow:5px 5px 10px #0F0;
+	animation:index-bg2 3s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;}
+.login{position:absolute;
+       width:300px;
+	   height:500px;
+	   display:none;
+	   background:rgba(143,143,143,0.5);
+	   top:70px;
+	   left:800px;
+	   animation:login-appear 1s;}
+.login p{font-size:18px;
+         left:260px;
+		 position:absolute;
+		 cursor:pointer;}
+.login-title{height:100px;
+             width:300px;
+			 left:0px;
+             margin-top:50px;
+			 position:relative;
+			 /*animation:login-title-appear 1s;
+			 animation-delay:1s;*/}
+.login-title a{font-size:24px;}
+.login-info{height:100px;
+            width:300px;
+			left:0px;
+			/*animation:login-info-appear 1s;
+			animation-delay:1s;*/}
+.login-info-info1{height:48px;
+                 border:1px solid #FFF;}
+.login-info-info2{height:48px;
+                     border:1px solid #FFF;}
+.login-go{height:100px;
+          width:300px;
+		  left:0px;
+          background:#00F;
+		  /*animation:login-go-appear 1s;
+		  animation-delay:2s;*/}
+.login-title-info{width:200px;
+	              height:60px;
+				  margin-left:50px;
+                  margin-top:20px;
+				  border-radius:30px;
+				  border:3px solid #FFF;
+				  position:absolute;
+				  background:#3F0;
+				  /*animation:login-title-info-appear 1s;*/
+				  }
+.login-go-ok{width:100px;
+	              height:40px;
+				  margin-left:100px;
+                  margin-top:20px;
+				  border-radius:20px;
+				  border:3px solid #FFF;
+				  position:absolute;
+				  background:#FF0;
+				  /*animation:login-title-info-appear 1s;*/
+				  }
+.stark-login{width:100px;}
+.stark-login input{width:296px;
+          height:40px;
+		  margin-top:3px;
+		  }
+.stark-login button{width:300px;
+          height:40px;
+		  margin-top:50px;
+		  }
+.stark-login button{font-size:18px;
+	}
+/*@keyframes login-appear{from{top:-500px;left:800px;width:300px;height:300px;}
+                        to{top:70px;left:800px;width:300px;height:500px;}}
+@-o-keyframes login-appear{from{top:-500px;left:800px;width:300px;height:300px;}
+                        to{top:70px;left:800px;width:300px;height:500px;}}
+@-webkit-keyframes login-appear{from{top:-500px;left:800px;width:300px;height:300px;}
+                        to{top:70px;left:800px;width:300px;height:500px;}}
+@-moz-keyframes login-appear{from{top:-500px;left:800px;width:300px;height:300px;}
+                        to{top:70px;left:800px;width:300px;height:500px;}}
+@keyframes index-bg2{0%{text-shadow:5px 5px 10px #FFF;}
+                     10%{text-shadow:5px 5px 10px #F00;}
+					 20%{text-shadow:5px 5px 10px #F30;}
+					 30%{text-shadow:5px 5px 10px #FF0;}
+					 40%{text-shadow:5px 5px 10px #0F6;}
+					 50%{text-shadow:5px 5px 10px #0F0;}
+					 60%{text-shadow:5px 5px 10px #09C;}
+					 70%{text-shadow:5px 5px 10px #00F;}
+					 80%{text-shadow:5px 5px 10px #C0F;}
+					 90%{text-shadow:5px 5px 10px #C09;}
+					 100%{text-shadow:5px 5px 10px #000;}
+					 from{margin-left:0px;}to{margin-left:700px;}}

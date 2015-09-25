@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;}
+  .bg{position:fixed;}
+  .home a{text-decoration:none;display:block;margin:auto auto;cursor:default;color:#000;}
+  .navi{width:195px;height:auto;margin-left:-30px;margin-top:50px;padding-bottom:10px;
+        position:absolute;z-index:9999;}
+  .navi p{display:block;text-align:center;width:195px;margin:10px auto;
+          font-size:36px;}
+  .navi ul{width:150px;height:auto;margin:0px auto;color:#000;}
+  .navi ul li{font-family:"微软雅黑";margin:0px auto;background:rgba(173,216,230,1);
+              list-style:none;text-align:center;line-height:40px;cursor:default;}
+  .navi ul li:hover{background:rgba(224,255,255,1);}
+  .scroll{width:100%;height:100%;position:fixed;/*border:2px solid #000;*/}
+  .view{width:100%;height:100%;float:left;}
+  /*内容部分*//*基本简介部分*/
+  .view-bg-g{width:96%;height:auto;margin:0 auto;margin-top:10px;}
+  .view-bg-g img{width:70%;height:300px;margin-left:15%;margin-bottom:10px;}
+  .view-text-g{width:96%;height:auto;margin:0 auto;}
+  .view-text-bg-g{width:70%;height:auto;margin:0 auto;background:rgba(0,187,255,1);}
+  .view-text-title-g{width:90%;height:auto;margin:0 auto;background:#0066FF;
+                     color:#000;margin-bottom:10px;}
+  .view-text-title-g p{display:block;line-height:50px;font-size:24px;}
+  .view-text-text-g{width:90%;height:auto;margin:0 auto;
+                    color:#000;background:rgba(187,255,238,1);font-size:18px;}
+  .view-text-text-g p{display:block;font-size:24px;padding-bottom:50px;}
+  /*设计特点部分*/ 
+  .view-bg-f{width:740px;height:220px;margin-left:200px;margin-top:10px;background:#FFF;}
+  .view-bg-f img{width:350px;height:200px;margin:10px;}
+  .view-text1-f{width:370px;height:auto;margin-left:200px;margin-top:5px;
+                padding-bottom:5px;background:rgba(0,187,255,1);float:left;}
+  .view-text1-title-f{width:96%;height:auto;margin:0 auto;background:#0066FF;
+                      color:#FFF;margin-bottom:10px;}
+  .view-text1-text-f{width:96%;height:auto;margin:0 auto;background:rgba(187,255,238,1);
+                     color:#000;font-size:16px;}
+  .view-text1-title-f p{display:block;line-height:40px;font-size:24px;}
+  /*布局结构部分*/
+  .view-bg-z{width:1120px;height:220px;margin-left:200px;margin-top:10px;background:#FFF;}
+  .view-bg-z img{width:350px;height:200px;margin:10px;}
+  .view-text1-z{float:left;width:370px;height:auto;
+                padding-bottom:5px;background:rgba(0,187,255,1);margin:2.5px;}
+  /*个性化空间*/
+  .view-text1-z:nth-child(1){margin-left:200px;}

@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+/*图片出现的动画特效*/
+/*@keyframes albums1{from{left:822px;}
+                   to{left:0px;}}
+@-webkit-keyframes albums1{from{left:822px;}
+                           to{left:0px;}}
+@-o-keyframes albums1{from{left:822px;}
+                           to{left:0px;}}
+@-moz-keyframes albums1{from{left:822px;}
+                        to{left:0px;}}
+@keyframes albums2{from{top:596px;}
+                   to{top:0px;}}
+@-webwit-keyframes albums2{from{top:596px;}
+                           to{top:0px;}}
+@-o-keyframes albums2{from{top:596px;}
+                           to{top:0px;}}
+@-moz-keyframes albums2{from{top:596px;}
+                        to{top:0px;}}
+@keyframes albums3{from{bottom:660px;}
+                   to{bottom:0px;}}
+@-webkit-keyframes albums3{from{bottom:660px;}
+                           to{bottom:0px;}}
+@-o-keyframes albums3{from{bottom:660px;}
+                      to{bottom:0px;}}
+@-moz-keyframes albums3{from{bottom:660px;}
+                        to{bottom:0px;}}
+@keyframes albums4{from{right:1366px;}
+                   to{right:0px;}}
+@-webkit-keyframes albums4{from{right:1366px;}
+                           to{right:0px;}}
+@-o-keyframes albums4{from{right:1366px;}
+                      to{right:0px;}}
+@-moz-keyframes albums4{from{right:1366px;}
+                        to{right:0px;}}*/
+@keyframes login-appear{from{top:-500px;left:800px;width:300px;height:300px;}
+                        to{top:70px;left:800px;width:300px;height:500px;}}
+@-o-keyframes login-appear{from{top:-500px;left:800px;width:300px;height:300px;}
+                        to{top:70px;left:800px;width:300px;height:500px;}}
+@-webkit-keyframes login-appear{from{top:-500px;left:800px;width:300px;height:300px;}
+                        to{top:70px;left:800px;width:300px;height:500px;}}
+@-moz-keyframes login-appear{from{top:-500px;left:800px;width:300px;height:300px;}
+                        to{top:70px;left:800px;width:300px;height:500px;}}
+@keyframes index-bg2{0%{text-shadow:5px 5px 10px #FFF;}
+                     10%{text-shadow:5px 5px 10px #F00;}
+					 20%{text-shadow:5px 5px 10px #F30;}
+					 30%{text-shadow:5px 5px 10px #FF0;}
+					 40%{text-shadow:5px 5px 10px #0F6;}
+					 50%{text-shadow:5px 5px 10px #0F0;}
+					 60%{text-shadow:5px 5px 10px #09C;}
+					 70%{text-shadow:5px 5px 10px #00F;}
+					 80%{text-shadow:5px 5px 10px #C0F;}
+					 90%{text-shadow:5px 5px 10px #C09;}
+					 100%{text-shadow:5px 5px 10px #000;}
+					 from{margin-left:0px;}to{margin-left:700px;}}
+@-o-keyframes index-bg2{0%{text-shadow:5px 5px 10px #FFF;}
+                     10%{text-shadow:5px 5px 10px #F00;}
+					 20%{text-shadow:5px 5px 10px #F30;}
+					 30%{text-shadow:5px 5px 10px #FF0;}
+					 40%{text-shadow:5px 5px 10px #0F6;}
+					 50%{text-shadow:5px 5px 10px #0F0;}
+					 60%{text-shadow:5px 5px 10px #09C;}
+					 70%{text-shadow:5px 5px 10px #00F;}
+					 80%{text-shadow:5px 5px 10px #C0F;}
+					 90%{text-shadow:5px 5px 10px #C09;}
+					 100%{text-shadow:5px 5px 10px #000;}
+					 from{margin-left:0px;}to{margin-left:700px;}}
+@-webkit-keyframes index-bg2{0%{text-shadow:5px 5px 10px #FFF;}
+                     10%{text-shadow:5px 5px 10px #F00;}
+					 20%{text-shadow:5px 5px 10px #F30;}
+					 30%{text-shadow:5px 5px 10px #FF0;}
+					 40%{text-shadow:5px 5px 10px #0F6;}
+					 50%{text-shadow:5px 5px 10px #0F0;}
+					 60%{text-shadow:5px 5px 10px #09C;}
+					 70%{text-shadow:5px 5px 10px #00F;}
+					 80%{text-shadow:5px 5px 10px #C0F;}
+					 90%{text-shadow:5px 5px 10px #C09;}
+					 100%{text-shadow:5px 5px 10px #000;}
+					 from{margin-left:0px;}to{margin-left:700px;}}
+@-moz-keyframes index-bg2{0%{text-shadow:5px 5px 10px #FFF;}
+                     10%{text-shadow:5px 5px 10px #F00;}
+					 20%{text-shadow:5px 5px 10px #F30;}
+					 30%{text-shadow:5px 5px 10px #FF0;}
+					 40%{text-shadow:5px 5px 10px #0F6;}
+					 50%{text-shadow:5px 5px 10px #0F0;}
+					 60%{text-shadow:5px 5px 10px #09C;}
+					 70%{text-shadow:5px 5px 10px #00F;}
+					 80%{text-shadow:5px 5px 10px #C0F;}
+					 90%{text-shadow:5px 5px 10px #C09;}
+					 100%{text-shadow:5px 5px 10px #000;}
+					 from{margin-left:0px;}to{margin-left:700px;}}
+@keyframes first{from{margin-top:-290px;}
+                 to{margin-top:-70px;}}
+@-o-keyframes first{from{margin-top:-290px;}
+                 to{margin-top:-70px;}}
+@-webkit-keyframes first{from{margin-top:-290px;}
+                 to{margin-top:-70px;}}
+@-moz-keyframes first{from{margin-top:-290px;}
+                 to{margin-top:-70px;}}
